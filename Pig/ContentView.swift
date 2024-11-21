@@ -14,9 +14,9 @@ struct ContentView: View {
     @State private var rotation = 0.0
     @State var gameOver = false
     var body: some View {
-        ZStack {
-            Color.gray.opacity(0.7).ignoresSafeArea()
-            NavigationView {
+        NavigationView() {
+            ZStack {
+                Color.gray.opacity(0.7).ignoresSafeArea()
                 VStack {
                     Image("Pig").resizable().frame(width: 150, height: 150)
                     CustomText(text: "Pig")
